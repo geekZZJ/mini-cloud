@@ -17,6 +17,12 @@
           "pathName": "pages/progress/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/rich-text/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

@@ -8,7 +8,6 @@ Component({
       type: Number,
       value: 0,
       observer: function (newVal, oldVal) {
-        console.log(1111, newVal, oldVal)
         this.draw(newVal, oldVal);
       }
     },
@@ -20,10 +19,6 @@ Component({
   data: {
     // 动画执行时间
     animTime: 500
-  },
-
-  ready() {
-    // if (this.data.percent) this.draw(this.data.percent);
   },
 
   /**

@@ -1,0 +1,6 @@
+<!--pages/rich-text/index.wxml-->
+<rich-text space="emsp" nodes="{{nodes}}" bindtap="tap"></rich-text>
+
+<view>-------------分隔-----------------</view>
+
+<parser bindimgtap="onTapImage" html="{{html}}" tag-style="{{tagStyle}}" />

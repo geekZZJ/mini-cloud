@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/progress/index"
+    "pages/progress/index",
+    "pages/rich-text/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

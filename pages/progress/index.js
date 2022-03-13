@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    percentValue: 0
+    percentValue: 80
   },
 
   drawProgress() {

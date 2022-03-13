@@ -1,0 +1,9 @@
+/* pages/rich-text/index.wxss */
+.div_class {
+  color: red;
+}
+
+.img {
+  font-size: 0;
+  display: block;
+}
