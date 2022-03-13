@@ -1,0 +1,3 @@
+<!--pages/progress/index.wxml-->
+<circle-progress percent="{{percentValue}}"></circle-progress>
+<button bindtap="drawProgress">redraw</button>
