@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/movable/index",
     "pages/index/index",
     "pages/progress/index",
     "pages/rich-text/index"

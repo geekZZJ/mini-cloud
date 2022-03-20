@@ -1,0 +1,25 @@
+<!--pages/movable/index.wxml-->
+<!-- 三种拖拽情况 -->
+<!-- 1 movable-view = movable-area -->
+<view class="page-section">
+  <view class="page-section-title">movable-view = movable-area</view>
+  <movable-area>
+    <movable-view style="width:400rpx;height:400rpx;" direction="all">text</movable-view>
+  </movable-area>
+</view>
+
+<!-- 2 movable-view < movable-area -->
+<view class="page-section">
+	<view class="page-section-title">movable-view 《 movable-area</view>
+	<movable-area>
+		<movable-view direction="all">text</movable-view>
+	</movable-area>
+</view>
+
+<!-- 3 movable-view > movable-area -->
+<view class="page-section">
+	<view class="page-section-title">movable-view 》 movable-area</view>
+	<movable-area style="width:500rpx;height:500rpx;">
+		<movable-view class="max" direction="all">text</movable-view>
+	</movable-area>
+</view>
