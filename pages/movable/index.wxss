@@ -31,3 +31,49 @@ movable-area {
   height: 600rpx;
   background-color: blue;
 }
+
+.btn-area {
+  box-sizing: border-box;
+  width: auto;
+  padding: 30rpx 0 30rpx;
+}
+
+.btn-area button {
+  margin-top: 20rpx;
+}
+
+.btn-area:first-child {
+  margin-top: 0;
+}
+
+.list_item {
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.left {
+  background-color: white;
+  height: 100rpx;
+  width: 720rpx;
+  color: grey;
+  line-height: 100rpx;
+  padding-left: 30rpx;
+}
+
+.right {
+  height: 100rpx;
+  display: flex;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.read {
+  background-color: #ccc;
+  color: #fff;
+  width: 150rpx;
+}
+
+.delete {
+  background-color: red;
+  color: #fff;
+  width: 150rpx;
+}

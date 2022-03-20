@@ -10,16 +10,49 @@
 
 <!-- 2 movable-view < movable-area -->
 <view class="page-section">
-	<view class="page-section-title">movable-view 《 movable-area</view>
-	<movable-area>
-		<movable-view direction="all">text</movable-view>
-	</movable-area>
+  <view class="page-section-title">movable-view 《 movable-area</view>
+  <movable-area>
+    <movable-view direction="all">text</movable-view>
+  </movable-area>
 </view>
 
 <!-- 3 movable-view > movable-area -->
 <view class="page-section">
-	<view class="page-section-title">movable-view 》 movable-area</view>
-	<movable-area style="width:500rpx;height:500rpx;">
-		<movable-view class="max" direction="all">text</movable-view>
-	</movable-area>
+  <view class="page-section-title">movable-view 》 movable-area</view>
+  <movable-area style="width:500rpx;height:500rpx;">
+    <movable-view class="max" direction="all">text</movable-view>
+  </movable-area>
 </view>
+
+<!-- 实现动画 -->
+<view class="page-section">
+  <view class="page-section-title">实现动画</view>
+
+  <movable-area>
+    <movable-view inertia damping="80" friction="1" bindchange="onMovableViewChange" animation x="{{x}}" y="{{y}}" direction="all">text</movable-view>
+  </movable-area>
+
+  <movable-area style="width:500rpx;height:500rpx;">
+    <movable-view bindchange="onMovableViewChange" class="max" direction="all">text</movable-view>
+  </movable-area>
+  <view class="btn-area">
+    <button data-kind="0" bindtap="tap" type="primary">click me to move to (30px, 30px)</button>
+    <button data-kind="1" bindtap="tap" type="primary">click me to move to (0px, 0px)</button>
+  </view>
+</view>
+
+<!-- 左侧删除1 自实现左滑删除效果-->
+<view class="page-section-title">左侧删除1</view>
+<view class="list_item">
+  <movable-area style="width:750rpx;height:100rpx;">
+    <movable-view style="width:1050rpx;height:100rpx;" direction="horizontal" class="max">
+      <view class="left">这里是插入到组内容1</view>
+      <view class="right">
+        <view class="read">已读</view>
+        <view class="delete">删除</view>
+      </view>
+    </movable-view>
+  </movable-area>
+</view>
+
+<view style="height: 500rpx;"></view>
