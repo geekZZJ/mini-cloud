@@ -41,7 +41,7 @@
   </view>
 </view>
 
-<!-- 左侧删除1 自实现左滑删除效果-->
+<!-- 左侧删除1 自实现左滑删除效果 -->
 <view class="page-section-title">左侧删除1</view>
 <view class="list_item">
   <movable-area style="width:750rpx;height:100rpx;">
@@ -54,5 +54,16 @@
     </movable-view>
   </movable-area>
 </view>
+
+
+<!-- 左侧删除2 miniprogram-slide-view -->
+<view class="page-section-title">左侧删除2</view>
+<slide-view class="slide" width="750" height="100" slideWidth="300">
+  <view class="left" slot="left">这里是插入到组内容2</view>
+  <view class="right" slot="right">
+    <view class="read">已读</view>
+    <view class="delete">删除</view>
+  </view>
+</slide-view>
 
 <view style="height: 500rpx;"></view>

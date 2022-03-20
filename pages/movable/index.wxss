@@ -77,3 +77,7 @@ movable-area {
   color: #fff;
   width: 150rpx;
 }
+
+.slide {
+  border-bottom: 1px solid #DEDEDE;
+}
