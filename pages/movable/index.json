@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "slide-view": "miniprogram-slide-view"
+    "slide-view": "miniprogram-slide-view",
+    "mp-slideview": "weui-miniprogram/slideview/slideview",
+    "mp-cell": "weui-miniprogram/cell/cell"
   }
 }

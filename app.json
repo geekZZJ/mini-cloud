@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/scroll/index",
     "pages/movable/index",
     "pages/index/index",
     "pages/progress/index",
@@ -12,5 +13,8 @@
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  }
 }

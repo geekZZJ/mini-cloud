@@ -5,7 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    slideButtons: [{
+      text: '普通1',
+      src: '/images/icon_love.svg',
+    }, {
+      text: '普通2',
+      extClass: 'test',
+      src: '/images/icon_star.svg',
+    }, {
+      type: 'warn',
+      text: '警示3',
+      extClass: 'test',
+      src: '/images/icon_del.svg',
+    }]
   },
 
   /**
@@ -56,7 +68,7 @@ Page({
       })
     }
   },
-  onMovableViewChange(e){
-    console.log("change",e.detail)
+  onMovableViewChange(e) {
+    console.log("change", e.detail)
   }
 })

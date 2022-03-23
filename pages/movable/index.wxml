@@ -66,4 +66,22 @@
   </view>
 </slide-view>
 
+<!-- 扩展声明，左侧删除3 weui ext -->
+<view class="page-section-title">左侧删除3</view>
+<view class="page__bd">
+  <view class="weui-cells">
+    <mp-slideview ext-class="slideViewClass" buttons="{{slideButtons}}" bindbuttontap="slideButtonTap">
+      <mp-cell value="标题文字"></mp-cell>
+    </mp-slideview>
+  </view>
+
+  <view class="weui-cells">
+    <mp-slideview buttons="{{slideButtons}}" icon="{{true}}" bindbuttontap="slideButtonTap">
+      <view class="weui-slidecell">
+        左滑可以删除（图标Button）
+      </view>
+    </mp-slideview>
+  </view>
+</view>
+
 <view style="height: 500rpx;"></view>

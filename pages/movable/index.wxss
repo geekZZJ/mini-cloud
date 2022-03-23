@@ -81,3 +81,9 @@ movable-area {
 .slide {
   border-bottom: 1px solid #DEDEDE;
 }
+
+.page__bd {
+  padding-bottom: 40rpx
+}
+
+.slideViewClass {}
