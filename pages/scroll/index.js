@@ -1,11 +1,13 @@
 // pages/scroll/index.js
+let viewId = 5
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    scrollIntoViewId: '',
   },
 
   /**
@@ -17,6 +19,18 @@ Page({
 
   onScroll(e) {
     // console.log(e.detail.scrollTop, e.detail.scrollLeft, e.detail.scrollHeight, e.detail.scrollWidth)
+  },
+
+  scrollToView1() {
+    viewId += 2
+    this.setData({
+      scrollIntoViewId: 'childview' + viewId
+    })
+    console.log(this.data.scrollIntoViewId)
+  },
+
+  viewScrollToUpperEvent(e) {
+    console.log('测试scrolltoupper事件', e.detail);
   },
 
   /**

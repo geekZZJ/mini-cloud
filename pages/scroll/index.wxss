@@ -23,6 +23,10 @@
   height: 300rpx;
 }
 
+.scroll-view-item {
+  height: 300rpx;
+}
+
 .demo-text-1 {
   background-color: green;
 }
@@ -33,4 +37,24 @@
 
 .demo-text-3 {
   background-color: gray;
+}
+
+.btn-area {
+  box-sizing: border-box;
+  width: auto;
+  padding: 30rpx 0 30rpx;
+}
+
+.scroll-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.scroll-item {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx;
+  background-color: gold;
+  display: block;
 }
