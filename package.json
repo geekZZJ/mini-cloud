@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/geekZZJ/mini-cloud#readme",
   "dependencies": {
+    "miniprogram-recycle-view": "^0.1.5",
     "miniprogram-slide-view": "0.0.4"
   }
 }

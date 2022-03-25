@@ -58,3 +58,16 @@
   background-color: gold;
   display: block;
 }
+
+.item,
+.item>view {
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  width: 630rpx;
+  padding-left: 20rpx;
+}
+
+.item+.item {
+  border-top: 1px solid #ccc;
+}

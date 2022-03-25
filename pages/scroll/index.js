@@ -1,5 +1,10 @@
 // pages/scroll/index.js
 let viewId = 5
+const createRecycleContext = require('miniprogram-recycle-view')
+
+function rpx2px(rpx) {
+  return (rpx / 750) * wx.getSystemInfoSync().windowWidth
+}
 
 Page({
 
@@ -37,7 +42,23 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    const ctx = createRecycleContext({
+      id: 'recycleId',
+      dataKey: 'recycleList',
+      page: this,
+      itemSize: {
+        width: rpx2px(650),
+        height: rpx2px(100)
+      }
+    })
+    const newList = []
+    for (let i = 0; i < 200; i++) {
+      newList.push({
+        id: i,
+        name: `标题${i + 1}`
+      })
+    }
+    ctx.append(newList)
   },
 
   /**
