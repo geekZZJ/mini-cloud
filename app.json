@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/picker/index",
     "pages/scroll/index",
     "pages/movable/index",
     "pages/index/index",

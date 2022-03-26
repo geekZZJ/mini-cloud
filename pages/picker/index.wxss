@@ -1,0 +1,7 @@
+/* pages/picker/index.wxss */
+@import "../../style/common.wxss";
+
+.picker{
+  padding: 13px;
+  background-color: #FFFFFF;
+}
