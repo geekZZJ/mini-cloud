@@ -1,0 +1,8 @@
+<!--components/pop-up/index.wxml-->
+<view catchtouchmove="popPreventTouchmove">
+  <view class="q-pp-mask  {{ visible ? 'q-pp-mask-show' : ''}}" bindtap="handleClickMask" catchtouchmove="popPreventTouchmove">
+    <view class="q-pp {{ visible ? 'q-pp-show' : '' }}" catchtouchmove="popPreventTouchmove">
+      <slot name="content" data-type="unclose"></slot>
+    </view>
+  </view>
+</view>

@@ -18,6 +18,10 @@ Page({
     })
   },
 
+  onRegionChange(e) {
+    console.log('选择了', e.detail);
+  },
+
   bindRegionChange: function (e) {
     this.setData({
       region: e.detail.value
